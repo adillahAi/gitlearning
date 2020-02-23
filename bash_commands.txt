@@ -1,0 +1,51 @@
+Bash Essentials
+ls -> list items in the dir
+
+cd.. -> move one up the dir hierarchy
+
+cd pathname -> move to the path name dir
+
+mkdir Foldername -> create new folder dir
+
+mkdir 'Folder Name' -> use ' ' to allow spaces in folder name
+
+mkdir -p a/b/c -> use -p flag to build parent structure if not already available
+
+Config Account
+git config --global user.name "username"
+
+git config --global user.email "username@email.com"
+
+omit --global for the above two config to check current username and email
+
+Push A Repo
+git init -> initialize new repo
+
+git status -> get desc. of made changes
+
+git add 'Filename.txt' -> tells Git you want to include updates to a particular file in the next commit
+
+git commit -m 'First commit' -> A commit, or "revision", is an individual change to a file (or set of files). It's like when you save a file, except with Git, every time you save it creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of what changes were made when and by who, while -m 'Message' is short for message
+
+git remote add origin https://github.com/Haschim/GithubLesson2020.git -> sync local to remote repo
+
+git push -u origin master -> upload local repo to remote repo. The -u flag is used to set origin as the upstream remote in your git config. As you push a branch successfully or up to date it, it adds upstream reference.
+
+Create New Branch & Merge To Master
+git branch develop -> create a new branch so that it does not affect master right away if not sure of commits git push -u origin develop
+
+git checkout develop -> switch to develop branch
+
+touch 'Feature 1.Feature' -> create new file name Feature 1.Feature
+
+git add . -> add all file by using .
+
+git commit -m "New Feature" -> commit the new file
+
+git push -> transfer local commit to remote repo
+
+git checkout master -> switch to master
+
+git merge develop -> merge develop branch to master
+
+ls -> to see file was added
